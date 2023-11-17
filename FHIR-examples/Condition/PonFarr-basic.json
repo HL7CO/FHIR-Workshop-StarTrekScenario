@@ -34,7 +34,8 @@
 				"code": "resolved",
 				"display": "Resolved"
 			}
-		]
+		],
+		"text": "Resuelto"
 	},
 	"verificationStatus": {
 		"coding": [
@@ -43,7 +44,8 @@
 				"code": "confirmed",
 				"display": "Confirmed"
 			}
-		]
+		],
+		"text": "Confirmado"
 	},
 	"category": [
 		{
@@ -63,7 +65,8 @@
 				"code": "24484000",
 				"display": "Severe"
 			}
-		]
+		],
+		"text": "Severo"
 	},
 	"code": {
 		"coding": [
@@ -77,7 +80,8 @@
 				"code": "268724009",
 				"display": "Excessive sexual drive (disorder)"
 			}
-		]
+		],
+		"text": "impulso sexual excesivo (trastorno)"
 	},
 	"subject": {
 		"reference": "Patient/mr-spock"
