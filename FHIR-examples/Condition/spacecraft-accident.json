@@ -1,0 +1,104 @@
+{
+    "resourceType": "Condition",
+    "id": "e8be959b",
+    "meta": {
+        "security": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                "code": "N",
+                "display": "normal"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                "code": "HTEST",
+                "display": "test health data"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                "code": "TRAIN",
+                "display": "training"
+            }
+        ],
+        "tag": [
+            {
+                "system": "https://startrek.com/database",
+                "code": "StarTrek",
+                "display": "Star Trek"
+            }
+        ]
+    },
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved",
+				"display": "Resolved"
+			}
+		],
+		"text": "Resuelto"
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed",
+				"display": "Confirmed"
+			}
+		],
+		"text": "Confirmado"
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"severity": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "24484000",
+				"display": "Severe"
+			}
+		],
+		"text": "Severo"
+	},
+	"code": {
+		"coding": [
+			{
+                "system": "http://hl7.org/fhir/sid/icd-10",
+                "code": "V95.4",
+                "display": "Spacecraft accident injuring occupant"
+            },
+            {
+				"system": "http://snomed.info/sct",
+				"code": "242238000",
+				"display": "Accident to spacecraft in flight (event)"
+			}
+		],
+		"text": "accidente de nave espacial en vuelo (evento)"
+	},
+    
+	"subject": {
+		"reference": "Patient/scotty"
+	},
+	"onsetDateTime": "2268-04-30T07:34:26-00:00",
+	"recordedDate": "2268-04-30T08:03:18-00:00",
+	"asserter": {
+		"reference": "Practitioner/dr-mccoy"
+	},
+    "evidence": [
+        {
+            "detail": [
+                {
+                    "reference": "Location/columbus-ncc-1701-2"
+                }
+            ]
+        }
+    ]
+}
