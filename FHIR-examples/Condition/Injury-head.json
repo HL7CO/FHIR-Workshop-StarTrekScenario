@@ -1,0 +1,116 @@
+{
+	"resourceType": "Condition",
+    "id": "c39dac16",
+	"meta": {
+        "security": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                "code": "N",
+                "display": "normal"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                "code": "HTEST",
+                "display": "test health data"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                "code": "TRAIN",
+                "display": "training"
+            }
+        ],
+        "tag": [
+            {
+                "system": "https://startrek.com/database",
+                "code": "StarTrek",
+                "display": "Star Trek"
+            }
+        ]
+    },
+	"clinicalStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+				"code": "resolved",
+				"display": "Resolved"
+			}
+		],
+		"text": "Resuelto"
+	},
+	"verificationStatus": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+				"code": "confirmed",
+				"display": "Confirmed"
+			}
+		],
+		"text": "Confirmado"
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+					"code": "encounter-diagnosis",
+					"display": "Encounter Diagnosis"
+				}
+			]
+		}
+	],
+	"severity": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "24484000",
+				"display": "Severe"
+			}
+		],
+		"text": "Severo"
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/sid/icd-10",
+				"code": "S09.9",
+				"display": "TRAUMATISMO DE LA CABEZA, NO ESPECIFICADO"
+			},
+            {
+				"system": "http://snomed.info/sct",
+				"code": "82271004",
+				"display": "Injury of head (disorder)"
+			}
+		],
+		"text": "traumatismo craneoencefálico (trastorno)"
+	},
+    "bodySite": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "69536005",
+                    "display": "Head structure (body structure)"
+                }
+            ],
+            "text": "estructura de la cabeza (estructura corporal)"
+        }
+    ],
+	"subject": {
+		"reference": "Patient/scotty"
+	},
+	"onsetDateTime": "2268-04-30",
+	"abatementDateTime": "2268-06-12",
+	"recordedDate": "2268-04-30",
+	"asserter": {
+		"reference": "Practitioner/dr-mccoy"
+	},
+    "evidence": [
+        {
+            "detail": [
+                {
+                    "reference": "Condition/e8be959b"
+                }
+            ]
+        }
+    ]
+}
