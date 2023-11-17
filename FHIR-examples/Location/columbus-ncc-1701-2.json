@@ -1,0 +1,57 @@
+{
+    "resourceType": "Location",
+    "id": "columbus-ncc-1701-2",
+    "meta": {
+        "security": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                "code": "N",
+                "display": "normal"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                "code": "HTEST",
+                "display": "test health data"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                "code": "TRAIN",
+                "display": "training"
+            }
+        ],
+        "tag": [
+            {
+                "system": "https://startrek.com/database",
+                "code": "StarTrek",
+                "display": "Star Trek"
+            }
+        ]
+    },
+    "identifier": [
+        {
+            "system": "https://startrek.com/database",
+            "value": "NCC-1701-2"
+        }
+    ],
+    "status": "active",
+    "name": "Columbus Space Shuttle",
+    "description": "Space Shuttle ncc-1701-2, F-class, assigned to the Starship Enterprise (named in honor of Christopher Columbus).",
+    "mode": "instance",
+    "physicalType": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                "code": "ve",
+                "display": "Vehicle"
+            }
+        ]
+    },
+    "managingOrganization": {
+        "reference": "Organization/starfleet",
+        "display": "Starfleet"
+    },
+    "partOf": {
+        "reference": "Location/enterprise-ncc-1701",
+        "display": "USS Enterprise"
+    }
+}
