@@ -21,7 +21,7 @@
     // Function to fetch and display AllergyIntolerance data
     function fetchAllergyIntoleranceData() {
       // Set the FHIR endpoint URL
-      var url = 'http://fhirserver.hl7fundamentals.org/fhir/AllergyIntolerance?patient=ens-chekov';
+      var url = 'http://hapi.fhir.org/baseR4/AllergyIntolerance?patient=ens-chekov';
 
       // Make the FHIR request using fetch
       fetch(url)
@@ -38,9 +38,9 @@
             var row = document.createElement('tr');
 
             // Add AllergyIntolerance information to the row
-            var substance = allergyIntolerance.code.text || 'N/A';
-            var clinicalStatus = allergyIntolerance.clinicalStatus.coding[0].display || 'N/A';
-            var verificationStatus = allergyIntolerance.verificationStatus.coding[0].display || 'N/A';
+            var substance = allergyIntolerance.code.coding[0].display || 'N/A';
+            var clinicalStatus = allergyIntolerance.clinicalStatus.coding[0].code || 'N/A';
+            var verificationStatus = allergyIntolerance.verificationStatus.coding[0].code || 'N/A';
             var criticality = allergyIntolerance.criticality || 'N/A';
 
             row.innerHTML = `<td>${substance}</td><td>${clinicalStatus}</td><td>${verificationStatus}</td><td>${criticality}</td>`;
