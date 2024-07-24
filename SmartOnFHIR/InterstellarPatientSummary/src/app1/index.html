@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART on FHIR Patient Data</title>
+    <script src="../../lib/js/fhir-client.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .patient-data, .resources-data {
+            margin-top: 20px;
+        }
+        .resource {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Data</h1>
+        <div id="patient-data" class="patient-data"></div>
+        
+        <h1>Associated Resources</h1>
+        <div id="resources-data" class="resources-data"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
